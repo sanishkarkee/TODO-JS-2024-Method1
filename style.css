@@ -43,17 +43,22 @@ body {
 
     .text {
         ul {
-            position: relative;
-            background-color: rgb(5, 31, 31);
-            color: #fff;
-            font-size: 19px;
-            text-align: left;
-            padding: 8px;
+            padding: 0;
 
-            i {
-                position: absolute;
-                right: 10px;
-                cursor: pointer;
+            li {
+                position: relative;
+                background-color: rgb(5, 31, 31);
+                color: #fff;
+                font-size: 19px;
+                text-align: left;
+                padding: 8px;
+                margin-block: 10px;
+
+                i {
+                    position: absolute;
+                    right: 10px;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -1,5 +1,7 @@
-let inputs = document.getElementById('inp');
-let text = document.querySelector('.text');
+// ---------YOUTUBE WAY (html ma ul content chai hudaina)---------
+
+// let inputs = document.getElementById('inp');
+// let text = document.querySelector('.text');
 
 // function Add() {
 //   if (inputs.value == '') {
@@ -26,7 +28,9 @@ let text = document.querySelector('.text');
 //   }
 // }
 
-// ---------------------(PRATICE)-------------------------
+// ---------------------(PRATICE: MERO WAY <ul> add gareko html ma so JS bata <li> ma data pass gareko)-------------------------
+let inputs = document.getElementById('inp');
+let listContent = document.querySelector('.list-container');
 
 function Add() {
   if (inputs.value.length == 0) {
@@ -35,9 +39,9 @@ function Add() {
     // 1. Create <ul>
     // 2. set value inside <ul>
     // 3.Insert <ul> inside .text class
-    let newEle = document.createElement('ul');
+    let newEle = document.createElement('li');
     newEle.innerHTML = `${inputs.value} <i class="fa fa-times" aria-hidden="true"></i>`;
-    text.appendChild(newEle);
+    listContent.appendChild(newEle);
 
     inputs.value = '';
 
